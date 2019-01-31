@@ -30,3 +30,20 @@
 *.exe
 *.out
 *.app
+
+# Generated directories
+**/core/**
+**/libraries/**
+**/Release/**
+
+# Trash files
+**/.ino.cpp
+**/.DS_Store
+**/.travis.yml
+**/lib/readme.txt
+
+# Platform IO and Visual studio code specific directories
+**/.vscode/**
+**/.pio/**
+**/.pioenvs/**
+**/.piolibdeps/**
