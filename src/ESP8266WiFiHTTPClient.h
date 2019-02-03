@@ -1,9 +1,3 @@
-/*
- * ESP8266WiFiHTTPClient.h
- *
- *  Created on: Apr 24, 2017
- *      Author: tamasruszka
- */
 
 #ifndef ARDUINO_SENSORS_ESP8266WIFI_ESP8266WIFIHTTPCLIENT_H_
 #define ARDUINO_SENSORS_ESP8266WIFI_ESP8266WIFIHTTPCLIENT_H_
@@ -12,7 +6,9 @@
 #include "ESP8266WiFiCommunicator.h"
 #include "avr/pgmspace.h"
 
-namespace esp8266wifi {
+namespace ESP8266Wifi {
+
+const String TRANSFER_PROTOKOL PROGMEM = "TCP";
 
 class ESP8266WiFiHTTPClient {
 	public:
@@ -33,8 +29,6 @@ class ESP8266WiFiHTTPClient {
 
 		String createHttpRequest(String method);
 		String createHttpRequest(String method, String data);
-
-		const String TRANSFER_PROTOKOL PROGMEM = "TCP";
 };
 
 } /* namespace esp8266wifi */

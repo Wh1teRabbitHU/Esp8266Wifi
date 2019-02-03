@@ -1,7 +1,7 @@
 
 #include "ESP8266WiFiHTTPClient.h"
 
-namespace esp8266wifi {
+namespace ESP8266Wifi {
 
 	ESP8266WiFiHTTPClient::ESP8266WiFiHTTPClient(ESP8266WiFiCommunicator &com) {
 		communicator = &com;
